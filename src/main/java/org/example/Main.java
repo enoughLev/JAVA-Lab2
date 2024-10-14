@@ -9,25 +9,25 @@ public class Main {
         double a = 10;
         double b = 10;
         double c = 15;
-        System.out.println(a + "\n" + b + "\n" + c + "\n" + "It is triangle -" + TriangleBool(a, b, c));
+        System.out.println(a + "\n" + b + "\n" + c + "\n" + "It is triangle - " + TriangleBool(a, b, c));
 
         /// 2
         System.out.println("\nDistance");
         double x1, x2, y1, y2;
-        x1 = 10;
-        y1 = 5;
+        x1 = 14;
+        y1 = 1;
         x2 = 15;
-        y2 = 30;
+        y2 = 10;
         System.out.println("Distance between (" + x1 + ", " + y1 + ") and " +
                 "(" + x2 + ", " + y2 + ") = " + Distance(x1, y1, x2, y2));
 
         /// 3
-        System.out.println("\nLoop");
-        double number = 5;
-        int pow = 3;
-        System.out.println(number + powerLoop(number, pow));
-        pow = -3;
-        System.out.println(number + powerLoop(number, pow));
+        System.out.println("\nPower Loop");
+        double number = 2;
+        int pow = 4;
+        System.out.println(number + "^" + pow + " = " + powerLoop(number, pow));
+        pow = -5;
+        System.out.println(number + "^" + pow + " = " + powerLoop(number, pow));
 
         /// 4
         System.out.println("\nRecurrent");
@@ -39,7 +39,7 @@ public class Main {
         System.out.println("\nTribonacci's number");
         number = 20;
         System.out.println("Tribonacci numbers up to the " + number + ": ");
-        for(int i=1; i<number; i++){
+        for(int i=1; i<=number; i++){
             System.out.print(tribonacci(i) + "  ");
         }
 
@@ -64,7 +64,7 @@ public class Main {
         if(pw == 0){
             return 1;
         }
-        double res = 2;
+        double res = num;
         for(int i = Math.abs(pw); i>1; i--){
             res = res*num;
         }

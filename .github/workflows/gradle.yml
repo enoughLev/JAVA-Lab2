@@ -22,4 +22,4 @@ jobs:
       - name: Grand authorities to wrapper
         run: chmod +x ./gradlew
       - name: Test with Gradle
-        run: ./gradle test
+        run: ./gradlew test
